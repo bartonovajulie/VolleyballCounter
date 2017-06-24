@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="layoutWidthWithWeight">0dp</dimen>
+    <dimen name="teamViewIndentation">16dp</dimen>
+    <dimen name="teamButtonIndentation">24dp</dimen>
+    <dimen name="teamButtonIndentationSmaller">8dp</dimen>
+    <dimen name="fontSizeTeamHeadline">14sp</dimen>
+    <dimen name="fontSizeScore">56sp</dimen>
+    <dimen name="viewLineWidth">1dp</dimen>
+    <dimen name="marginBottomResetButton">32dp</dimen>
+</resources>

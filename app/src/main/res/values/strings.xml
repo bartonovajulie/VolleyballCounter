@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">VolleyballCounter</string>
+    <string name="ballPlacement">Ball placement</string>
+    <string name="opponentMistake">Opponent\'s mistake</string>
+    <string name="opponentPenalty">Opponent\'s penalty</string>
+    <string name="teamAHeadline">Team A</string>
+    <string name="teamBHeadline">Team B</string>
+    <string name="teamDefaultValue">0</string>
+    <string name="resetButton">Reset</string>
+</resources>

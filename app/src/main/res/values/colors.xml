@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color name="colorPrimary">#FFF</color>
+    <color name="colorPrimaryDark">#FFF</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorTeamHeadline">#616161</color>
+    <color name="colorScore">#000000</color>
+</resources>

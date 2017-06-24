@@ -1,0 +1,15 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Primary theme color of the app (sets background color of app bar) -->
+        <item name="colorPrimary">#ccffcc</item>
+        <!-- Background color of buttons in the app -->
+        <item name="colorButtonNormal">#ccffcc</item>
+    </style>
+    <style name="TeamStyle" parent="Theme.AppCompat.Light">
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="ScoreStyle" parent="Theme.AppCompat.Light">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+</resources>

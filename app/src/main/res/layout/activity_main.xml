@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:configChanges="keyboardHidden|orientation|screenSize">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/layoutWidthWithWeight"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/teamViewIndentation"
+            android:layout_weight="@integer/linearLayoutTeamWeight"
+            android:orientation="vertical"
+            tools:context="com.example.android.courtcounter.MainActivity">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TeamStyle"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/teamViewIndentation"
+                android:text="@string/teamAHeadline"
+                android:textColor="@color/colorTeamHeadline"
+                android:textSize="@dimen/fontSizeTeamHeadline" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ScoreStyle"
+                android:gravity="center_horizontal"
+                android:text="@string/teamDefaultValue"
+                android:textColor="@color/colorScore"
+                android:textSize="@dimen/fontSizeScore" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/teamButtonIndentation"
+                android:layout_marginRight="@dimen/teamButtonIndentation"
+                android:layout_marginTop="@dimen/teamButtonIndentation"
+                android:onClick="addOneForTeamA"
+                android:text="@string/ballPlacement" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/teamButtonIndentation"
+                android:layout_marginRight="@dimen/teamButtonIndentation"
+                android:layout_marginTop="@dimen/teamButtonIndentationSmaller"
+                android:onClick="addOneForTeamA"
+                android:text="@string/opponentMistake" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/teamButtonIndentationSmaller"
+                android:layout_marginLeft="@dimen/teamButtonIndentation"
+                android:layout_marginRight="@dimen/teamButtonIndentation"
+                android:layout_marginTop="@dimen/teamButtonIndentationSmaller"
+                android:onClick="addOneForTeamA"
+                android:text="@string/opponentPenalty" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/viewLineWidth"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/teamViewIndentation"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="@dimen/layoutWidthWithWeight"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/teamViewIndentation"
+            android:layout_weight="@integer/linearLayoutTeamWeight"
+            android:orientation="vertical"
+            tools:context="com.example.android.courtcounter.MainActivity">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TeamStyle"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/teamViewIndentation"
+                android:text="@string/teamBHeadline"
+                android:textColor="@color/colorTeamHeadline"
+                android:textSize="@dimen/fontSizeTeamHeadline" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ScoreStyle"
+                android:gravity="center_horizontal"
+                android:text="@string/teamDefaultValue"
+                android:textColor="@color/colorScore"
+                android:textSize="@dimen/fontSizeScore" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/teamButtonIndentation"
+                android:layout_marginRight="@dimen/teamButtonIndentation"
+                android:layout_marginTop="@dimen/teamButtonIndentation"
+                android:onClick="addOneForTeamB"
+                android:text="@string/ballPlacement" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/teamButtonIndentation"
+                android:layout_marginRight="@dimen/teamButtonIndentation"
+                android:layout_marginTop="@dimen/teamButtonIndentationSmaller"
+                android:onClick="addOneForTeamB"
+                android:text="@string/opponentMistake" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/teamButtonIndentationSmaller"
+                android:layout_marginLeft="@dimen/teamButtonIndentation"
+                android:layout_marginRight="@dimen/teamButtonIndentation"
+                android:layout_marginTop="@dimen/teamButtonIndentationSmaller"
+                android:onClick="addOneForTeamB"
+                android:text="@string/opponentPenalty" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/marginBottomResetButton"
+        android:onClick="resetScores"
+        android:text="@string/resetButton" />
+
+</RelativeLayout>
